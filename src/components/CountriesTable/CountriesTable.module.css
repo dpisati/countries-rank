@@ -1,6 +1,6 @@
 .heading {
     display: flex;
-
+    padding: 20px;
 }
 
 .heading button {
@@ -10,10 +10,14 @@
     cursor: pointer;
     font-family: var(--font-family);   
 }
-
-.heading_name, .heading_population {
+.heading_flag {
     flex: 1;
-    padding: 20px;
+    margin-right: 16px;
+}
+
+.heading_name, .heading_population, .heading_area, .heading_gini {
+    flex: 4;
+    
     color: var(--text-color-secondary);
     font-weight: 500;
     display: flex;
@@ -43,17 +47,52 @@
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
 }
 
-.name {
-    flex: 1;
-    text-align: left;
-}
+
 .population {
-    flex: 1;
+    flex: 4;
 }
+
 .heading_arrow {
     color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 2px;
+}
+
+.name {
+    flex: 4;
+    text-align: left;
+}
+
+.area {
+    flex: 4;
+}
+
+.gini {
+    flex: 4;
+}
+
+.flag {
+    flex: 1;
+    margin-right: 16px;
+}
+
+.flag img {
+    border-radius: 2px;
+    width: 100%;
+}
+
+@media screen and (max-width: 720px) {   
+    .area, .heading_area {
+        display: none;
+    }
+    
+    .gini, .heading_gini {
+        display: none;
+    }
+    
+    .flag, .heading_flag {
+        display: none;
+    }
 }

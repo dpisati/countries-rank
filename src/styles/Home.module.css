@@ -2,3 +2,21 @@
     margin: 12px;
     color: var(--text-color-secondary);
 }
+
+.inputContainer {
+    margin-bottom: 40px;
+}
+
+@media (min-width: 720px) {
+    .inputContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .counts {
+        flex: 1;
+    }
+    .input {
+        flex: 2;
+    }
+}
