@@ -51,7 +51,7 @@ The project is made with:
 ## :heavy_check_mark: :computer: Web
 
 <h1 align="center">
-    <img alt="Web" src=".github/worldRanksWeb.gif" width="900px">
+    <img alt="Web" src=".github/worldRanks.gif" width="900px">
 </h1>
 
 <a id="preview-mobile"></a>
